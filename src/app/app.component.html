@@ -7,11 +7,6 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<style>
-  
-
- 
-</style>
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
@@ -32,18 +27,17 @@
 
 <div class="content" role="main">
 
-  <h2> Dimas </h2>
+  <h2> Dimas sedang {{ title }} </h2>
+  <app-test ng-if="false"></app-test>
+  {{ firstName }} {{ lastName }}
+  <input type="text" [(ngModel)]="firstName">
+  <input type="text" [(ngModel)]="lastName">
+  <input type="text" [value]="lastName">
 
+  <div>{{ 10 + 5}}</div>
+  
+
+  <img [src]="imageUrl" width="300" height="200">
 </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
 
 <router-outlet></router-outlet>
